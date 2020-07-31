@@ -18,6 +18,7 @@
   },
   "scripts": {
     "server": "node ./server.js",
+    "server:static": "json-server --watch ./src/data/db.json --port 8080",
     "dev": "concurrently \"react-scripts start\" \"npm run server\"",
     "start": "npm run server",
     "build": "react-scripts build",
